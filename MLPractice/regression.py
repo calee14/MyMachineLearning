@@ -9,7 +9,9 @@ from matplotlib import style
 
 style.use('ggplot')
 
-df = quandl.get('WIKI/GOOGL')
+today = datetime.date.today()
+
+df = quandl.get('WIKI/GOOGL', end_date=str(today))
 
 # create features
 df = df[['Adj. Open', 'Adj. High', 'Adj. Low', 'Adj. Close', 'Adj. Volume',]]
