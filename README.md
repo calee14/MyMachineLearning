@@ -7,6 +7,7 @@ Make sure you have all the dependencies installed before running any of the pyth
 ```
 git clone https://github.com/calee14/MyMachineLearning.git
 ```
+Another way to run my code is to upload it to the [Colaboratory Google](https://colab.research.google.com/) online IDE and run the code there without needing to install anything on your local machine.
 
 # Deployment
 Make sure you have the python command so that you can run the files.
