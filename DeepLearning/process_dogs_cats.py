@@ -13,14 +13,14 @@ import os
 import cv2
 
 # get data from https://www.microsoft.com/en-us/download/confirmation.aspx?id=54765
-DATADIR = "X:/Datasets/PetImages" # put your own directory for data
+DATADIR = "D:/datasets/PetImages" # put your own directory for data
 CATEGORIES = ["Dog", "Cat"]
 
 for category in CATEGORIES:
-  path = os.path.join(DATA, category) # path to cats or dogs dir
+  path = os.path.join(DATADIR, category) # path to cats or dogs dir
   for img in os.listdir(path):
     img_array = cv2.imread(os.path.join(path, img), cv2.IMREAD_GRAYSCALE)
-    plt.imshow(img_array, cmap="grey")
+    plt.imshow(img_array, cmap="gray")
     plt.show()
     break
   break
@@ -30,14 +30,14 @@ print(img_array.shape)
 IMG_SIZE = 50
 
 new_array = cv2.resize(img_array, (IMG_SIZE, IMG_SIZE))
-plt.imshow(new_array, cmap='grey')
+plt.imshow(new_array, cmap='gray')
 plt.show()
 
 training_data = []
 
 def create_training_data():
   for category in CATEGORIES:
-    path = os.path.join(DATA, category) # path to cats or dogs dir
+    path = os.path.join(DATADIR, category) # path to cats or dogs dir
     class_num = CATEGORIES.index(category)
     for img in os.listdir(path):
       try:
