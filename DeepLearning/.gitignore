@@ -1,3 +1,4 @@
 *.pickle
 *.ckpt
 *.jpeg
+*.model
