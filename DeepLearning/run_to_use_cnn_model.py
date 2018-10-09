@@ -7,15 +7,9 @@ Original file is located at
     https://colab.research.google.com/drive/1XC1lT2Z2Ter3AD2QjltGkpb7f99Ok6aI
 """
 
-# Load the Drive helper and mount
-from google.colab import drive
-
-# This will proot for authorization
-drive.mount('/content/drive')
-
 import cv2
 import tensorflow as tf
-
+import keras
 CATEGORIES = ["Dog", "Cat"]
 
 def prepare(filepath):
@@ -24,10 +18,10 @@ def prepare(filepath):
   new_array = cv2.resize(img_array, (IMG_SIZE, IMG_SIZE))
   return new_array.reshape(-1, IMG_SIZE, IMG_SIZE, 1)
 
-model = tf.keras.models.load_model("/content/drive/My Drive/Colab Notebooks/cnn_own_data/64x3-CNN.model")
+model = keras.models.load_model("64x3-CNN.model")
 
-prediction = model.predict([prepare('/content/drive/My Drive/Colab Notebooks/cnn_own_data/cat.jpg')])
+prediction = model.predict([prepare('cat.jpg')])
 print(prediction)
 
-prediction = model.predict([prepare('/content/drive/My Drive/Colab Notebooks/cnn_own_data/dog.jpg')])
+prediction = model.predict([prepare('dog.jpg')])
 print( CATEGORIES[int(prediction[0][0])])
