@@ -19,3 +19,5 @@ Make sure you have the python command so that you can run the files.
 # Authors
 - **Cap** - gonna be the only author
 
+# NOTES
+- Check if it's possible to train a neural networkn on usgs data.
