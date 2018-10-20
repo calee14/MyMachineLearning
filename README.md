@@ -1,6 +1,6 @@
 # MyMachineLearning
 Machine Learning scripts/bots that I made at camp, own my own, or other places. 
-So far I learned about regression, k_nearest_neighbors, and support vector machines.
+So far I learned about regression, k_nearest_neighbors, support vector machines, recurrent neural networks, and convolutional nerual networks.
 
 # Getting started
 Make sure you have all the dependencies installed before running any of the python scripts. There isn't a python dependency file so you'll have to look at the files and check what you need to install. To install type this command in you terminal:
@@ -19,3 +19,5 @@ Make sure you have the python command so that you can run the files.
 # Authors
 - **Cap** - gonna be the only author
 
+# NOTES
+- Check if it's possible to train a neural networkn on usgs data.
