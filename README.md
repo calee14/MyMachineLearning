@@ -15,6 +15,7 @@ Make sure you have the python command so that you can run the files.
 # Built With
 - [Sublime Text](https://www.sublimetext.com/3) - IDE
 - [Colaboratory Google](https://colab.research.google.com/) - Online IDE for machine learning
+- [Tensorflow](https://www.tensorflow.org/) and [Keras](https://keras.io/)
 
 # Authors
 - **Cap** - gonna be the only author
