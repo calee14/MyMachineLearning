@@ -22,7 +22,7 @@ template = cv2.Canny(template, 50, 200)
 cv2.imshow("Template", template)
 
 # loop over the images to find the template in
-for imagePath in glob.glob(args["images"] + "/*.jpg"):
+for imagePath in glob.glob(args["images"] + "/*.png"):
 	# load the image, convert it to grayscale, and initialize the
 	# book keeping variable to keep track of the matched region
 	image = cv2.imread(imagePath)
