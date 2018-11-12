@@ -28,8 +28,7 @@ while True:
 	# book keeping variable to keep track of the matched region
 	ret, image = cap.read()
 	gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
-	gray = cv2.Canny(gray, 50, 200)
-	cv2.imshow('Frame', gray)
+	
 	found = None
 
 	# loop over the scales of the image
