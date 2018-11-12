@@ -1,3 +1,5 @@
+'''
+# Version 2.0: Using feature matching
 import cv2
 import numpy as np
 import matplotlib.pyplot as plt
@@ -50,8 +52,10 @@ while True:
 
 cap.release()
 cv2.destroyAllWindows()
-
 '''
+
+
+# Version 1.0: Using multi-scaling match template
 # import the necessary modules
 import numpy as np
 import argparse
@@ -128,7 +132,7 @@ while True:
 
 	if cv2.waitKey(1) & 0xFF == ord('q'):
 		break
-'''
+
 '''
 # loop over the images to find the template in
 for imagePath in glob.glob(args["images"] + "/*.png"):
