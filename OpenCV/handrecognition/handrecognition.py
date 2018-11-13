@@ -1,3 +1,4 @@
+
 '''
 # Version 2.0: Using feature matching
 import cv2
@@ -134,6 +135,7 @@ while True:
 		break
 
 '''
+# Original Version
 # loop over the images to find the template in
 for imagePath in glob.glob(args["images"] + "/*.png"):
 	# load the image, convert it to grayscale, and initialize the
@@ -183,5 +185,5 @@ for imagePath in glob.glob(args["images"] + "/*.png"):
 	cv2.imshow("Image", image)
 	cv2.waitKey(0)
 # To run enter this command:
-# python handrecognition.py --template cod_logo.png --images images
+# python handrecognition.py --template opencv_frame_0.png --images images
 '''
