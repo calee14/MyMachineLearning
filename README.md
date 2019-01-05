@@ -22,3 +22,5 @@ Make sure you have the python command so that you can run the files.
 
 # NOTES
 - Check if it's possible to train a neural networkn on usgs data.
+- Use kaggle's earthquake data for training
+- Possibly use a neural network as the model
